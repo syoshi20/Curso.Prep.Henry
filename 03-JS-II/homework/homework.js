@@ -201,7 +201,7 @@ function doWhile(numero) {
    numero=numero+5;
    cont++;
   }
-  While(cont<8)
+  while(cont<8)
 }
 
 
