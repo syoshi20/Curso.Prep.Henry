@@ -1,0 +1,4 @@
+For es un bucle que nosotros definimos cuantas veces se va ejecutar
+&& es un operador (and) q me permite poner varias condiciones que se tienen q cumplir todas para q me de true
+|| es un operador (o) q me permite poner 2 o mas codiciones q se tiene q cumplir una sola para q me de true
+!  es un operador (not) que me permite obtener lo contrario de la condicion  
