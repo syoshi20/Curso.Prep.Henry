@@ -85,7 +85,7 @@ function mayorQueCincuenta(num) {
   // Devuelve "true" si el argumento de la función "num" es mayor que cincuenta
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (num <50) {return true ;}else{return false;}
+  if (num >50) {return true ;}else{return false;}
 }
 
 function obtenerResto(x, y) {
@@ -112,25 +112,26 @@ function elevarAlCuadrado(num) {
   // Devuelve el valor de "num" elevado al cuadrado
   // ojo: No es raiz cuadrada!
   // Tu código:
-  return num^2;
+  return math.pow(num,2);
   
 }
 
 function elevarAlCubo(num) {
   // Devuelve el valor de "num" elevado al cubo
   // Tu código:
-  return num^3;
+  return math.pow(num,3);
 }
 
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
-  return num^exponent;
+  return math.pow(num,exponent);
 }
 
 function redondearNumero(num) {
   // Redondea "num" al entero más próximo y devuélvelo
   // Tu código:
+  
 return math.round(num);
   
 }
