@@ -1,0 +1,7 @@
+variable es un espacio donde podemos acceder
+string es un tipo de variable que contiene letraso caracterres
+funciones son sentencias que realizan acciones 
+los argumentos son expresiones que pueden recibir las funciones
+return funciona para devolver valores de las funciones y detiene la funcion
+if es una condicion que dependiendo si se cumple o no ejecuta el codigo
+Valores booleanos son los valores true o false 
