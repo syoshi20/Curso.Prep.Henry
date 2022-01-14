@@ -138,7 +138,7 @@ function operadoresLogicos(num1, num2, num3) {
   var cond1;
   var cond2;
   var cond3;
-  while(num1!=0 && num2!=0 && num3!=0)
+  if(num1!=0 && num2!=0 && num3!=0)
   {
    if(num1<0 || num2<0 || num3<0){return "Hay negativos";} else {cond1!=false;}
 
@@ -149,7 +149,8 @@ function operadoresLogicos(num1, num2, num3) {
    if (cond1=== true && cond2===true && cond3===true) { return false;}
         
   }
-  return "error";
+  else{
+  return "error";}
 }
 
 function esPrimo(numero) {
