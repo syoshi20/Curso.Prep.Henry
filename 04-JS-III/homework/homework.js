@@ -283,9 +283,9 @@ function breakStatement(numero) {
    }  else
          {        
           array.push(numero+2);
-          limite++;
+          
          }
-    
+    limite++;
   }
   if (limite<10) 
   {
@@ -314,9 +314,9 @@ function continueStatement(numero) {
     else{
          numero=numero+2;
          array.push(numero);
-         limite++;
+         
         }
-    
+    limite++;
   }
   return array;
 }
