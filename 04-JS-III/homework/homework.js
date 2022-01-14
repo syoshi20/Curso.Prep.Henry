@@ -176,7 +176,7 @@ function empiezaConNueve(n) {
   var num = n.toString;
 
  
-   if (num.charAt(0)===9) 
+   if (num.charAt(0)==='9') 
     {
       return true;
     }else
