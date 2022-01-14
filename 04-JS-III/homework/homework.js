@@ -280,12 +280,12 @@ function breakStatement(numero) {
    if(numero+2!== limite)
    {
    array.push(numero+2);
-   
+   limite++;
    }  else
          {        
           break;
          }
-   limite++; 
+    
   }
   if (limite<10) 
   {
@@ -309,9 +309,10 @@ function continueStatement(numero) {
     if (limite!==5)
     {
     array.push(numero+2);
+    limite++;
     }
     else{continue;}
-    limite++;
+    
   }
   return array;
 }
