@@ -111,9 +111,9 @@ function numeroMasGrande(numeros) {
   // Devuelve el número más grande
   // Tu código:
     var numM=numeros[0];
-    for(var i = 0 ;i<numeros.length;i++)
+    for(var i = 1 ;i<numeros.length;i++)
     {
-      if (numM>numeros[i])
+      if (numM<numeros[i])
       {
         numM=numeros[i];
       }
@@ -127,7 +127,7 @@ function multiplicarArgumentos() {
   // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
   // Escribe tu código aquí:
   var prod=1;
-  if( arguments.length>1 )
+  if( arguments.length<1 )
   {
    for(var i =0 ; i<arguments.length;i++)
    {
@@ -173,15 +173,16 @@ function empiezaConNueve(n) {
   //Desarrolle una función que recibe como parámetro un número entero n. Debe retornar true si el entero 
   //inicia con 9 y false en otro caso.
   //Escribe tu código aquí
-  
+  n = n.toString;
 
- {
-   if (n%10000000===9 || n%1000000===9|| n%100000===9|| n%10000===9|| n%1000===9|| n%100===9|| n%10===9) 
+ 
+   if (n.chartAt(0)===9) 
     {
       return true;
-    }
- }
+    }else
+ {
  return false;
+ }
 }
 
 
@@ -279,12 +280,13 @@ function breakStatement(numero) {
    if(numero+2!== limite)
    {
    array.push(numero+2);
-   limite++; 
+   
    }  else
          {
           return "Se interrumpió la ejecución";
           break;
          }
+   limite++; 
   }
   return array;
 }
