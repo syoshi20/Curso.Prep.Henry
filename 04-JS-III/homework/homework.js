@@ -279,7 +279,7 @@ function breakStatement(numero) {
   while(!(limite <10))
   {
     numero=numero+2;
-   if(numero+2=== limite)
+   if(numero=== limite)
    {
    break;
    }  else
@@ -310,13 +310,13 @@ function continueStatement(numero) {
   var limite=0;
   while(!(limite<10))
   {
-    numero=numero+2;
+    
     if (limite===5)
     {
     continue;
     }
     else{
-         
+         numero=numero+2;
          array.push(numero);
          
         }
