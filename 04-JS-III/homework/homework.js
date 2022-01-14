@@ -275,19 +275,21 @@ function breakStatement(numero) {
   // Tu código:
   var limite=0;
   var array=[];
+  
   while(limite >10)
   {
    if(numero+2=== limite)
    {
    break;
    }  else
-         {        
-          array.push(numero+2);
+         {       
+          numero=numero+2;
+          array.push(numero);
           
          }
     limite++;
   }
-  if (limite>10) 
+  if (limite<10) 
   {
   return "Se interrumpió la ejecución";
   }else{
