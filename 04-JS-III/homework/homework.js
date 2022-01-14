@@ -127,7 +127,7 @@ function multiplicarArgumentos() {
   // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
   // Escribe tu código aquí:
   var prod=1;
-  if( arguments.length<1 )
+  if( arguments.length>=1 )
   {
    for(var i =0 ; i<arguments.length;i++)
    {
@@ -173,10 +173,10 @@ function empiezaConNueve(n) {
   //Desarrolle una función que recibe como parámetro un número entero n. Debe retornar true si el entero 
   //inicia con 9 y false en otro caso.
   //Escribe tu código aquí
-  n = n.toString;
+  var num = n.toString;
 
  
-   if (n.chartAt(0)===9) 
+   if (num.chartAt(0)===9) 
     {
       return true;
     }else
@@ -275,7 +275,7 @@ function breakStatement(numero) {
   // Tu código:
   var limite=0;
   var array=[];
-  while(limite >10)
+  while(limite <10)
   {
    if(numero+2!== limite)
    {
@@ -301,7 +301,7 @@ function continueStatement(numero) {
   // Tu código:
   var array=[];
   var limite=0;
-  while(limite>10)
+  while(limite<10)
   {
     if (limite<=5)
     {
