@@ -152,9 +152,10 @@ function operadoresLogicos(num1, num2, num3) {
                                
                                        } else {cond3=false;}
    
-           }
-   if (cond1=== false && cond2===false && cond3===false) { return false;}
-          
+           
+            if (cond1=== false && cond2===false && cond3===false) { return false;}
+          }       
+       }   
   }
   else{
   return "Error";}
