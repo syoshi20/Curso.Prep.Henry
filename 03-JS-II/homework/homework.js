@@ -30,7 +30,7 @@ function conection(status) {
                  case 2: return "Away";
                          
                  default:
-                         return "offline";         
+                         return "Offline";         
                 }               
 }
 
@@ -141,15 +141,15 @@ function operadoresLogicos(num1, num2, num3) {
   {
    if(num1<0 || num2<0 || num3<0){return "Hay negativos";} else {cond1==false;}
 
-   if (num1>num2 && num1>num3 && num>0) {return "Número 1 es mayor y positivo";} else {cond2==false;}
+   if (num1>num2 && num1>num3 && num1>0) {return "Número 1 es mayor y positivo";} else {cond2==false;}
          
    if (num1>num2 && num1>num3) {return ++num3;} else {cond3==false;}
 
-   if (cond1!== true && cond2!==true && cond3!==true) { return false;}
+   if (cond1=== false && cond2===false && cond3===false) { return false;}
         
   }
   else{
-  return "error";}
+  return "Error";}
 }
 
 function esPrimo(numero) {
@@ -178,7 +178,7 @@ function tablaDelSeis(){
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí   
   var ls=[];
-  for(var i =0;i<=60;i++){
+  for(var i =0;i<=10;i++){
     ls.push(i*6);
   }
   return ls;
