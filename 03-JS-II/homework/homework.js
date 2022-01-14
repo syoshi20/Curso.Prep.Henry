@@ -149,7 +149,7 @@ function operadoresLogicos(num1, num2, num3) {
    if (cond1=== true && cond2===true && cond3===true) { return false;}
         
   }
-  return "error"
+  return "error";
 }
 
 function esPrimo(numero) {
@@ -202,6 +202,8 @@ function doWhile(numero) {
    cont++;
   }
   while(cont<8)
+    return numero;
+
 }
 
 
