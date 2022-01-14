@@ -277,13 +277,13 @@ function breakStatement(numero) {
   var array=[];
   while(limite <10)
   {
-   if(numero+2!== limite)
+   if(numero+2=== limite)
    {
-   array.push(numero+2);
-   limite++;
+   break;
    }  else
          {        
-          break;
+          array.push(numero+2);
+          limite++;
          }
     
   }
@@ -306,12 +306,14 @@ function continueStatement(numero) {
   var limite=0;
   while(limite<10)
   {
-    if (limite!==5)
+    if (limite===5)
     {
-    array.push(numero+2);
-    limite++;
+    continue;
     }
-    else{continue;}
+    else{
+         array.push(numero+2);
+         limite++;
+        }
     
   }
   return array;
