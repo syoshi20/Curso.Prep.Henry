@@ -176,7 +176,7 @@ function empiezaConNueve(n) {
   var num = n.toString;
 
  
-   if (num.chartAt(0)===9) 
+   if (num.charAt(0)===9) 
     {
       return true;
     }else
@@ -290,8 +290,9 @@ function breakStatement(numero) {
   if (limite<10) 
   {
   return "Se interrumpió la ejecución";
-  }else
+  }else{
   return array;
+  }
 }
 
 
@@ -311,7 +312,8 @@ function continueStatement(numero) {
     continue;
     }
     else{
-         array.push(numero+2);
+         numero=numero+2;
+         array.push(numero);
          limite++;
         }
     
