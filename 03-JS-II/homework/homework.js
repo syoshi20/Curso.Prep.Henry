@@ -13,7 +13,7 @@ function mayoriaDeEdad(edad) {
   //Determinar si la persona según su edad puede ingresar a un evento.
   //Si tiene 18 años ó más, devolver --> "Allowed"
   //Si es menor, devolver --> "Not allowed"
-  if (edad>18) {return "Allowed";}
+  if (edad>=18) {return "Allowed";}
   else{return "Not allowed";}
 }
   
@@ -23,16 +23,15 @@ function conection(status) {
   //Cuando el estado es igual a 2, el usuario está "Away"
   //De lo contrario, presumimos que el usuario está "Offline"
   //Devolver el estado de conexión de usuario en cada uno de los casos.
- var estado;
+ 
  switch(status) {
-                 case 1: estado="Online";
-                         break;
-                 case 2: estado="Away";
-                         break;
+                 case 1: return"Online";
+                         
+                 case 2: return="Away";
+                         
                  default:
-                         estado="offline";         
-                }
- return estado;               
+                         return="offline";         
+                }               
 }
 
 function saludo(idioma) {
@@ -138,15 +137,15 @@ function operadoresLogicos(num1, num2, num3) {
   var cond1;
   var cond2;
   var cond3;
-  if(num1!=0 && num2!=0 && num3!=0)
+  if(num1!==0 && num2!==0 && num3!==0)
   {
-   if(num1<0 || num2<0 || num3<0){return "Hay negativos";} else {cond1!=false;}
+   if(num1<0 || num2<0 || num3<0){return "Hay negativos";} else {cond1==false;}
 
-   if (num1>num2 && num1>num3) {return "Número 1 es mayor y positivo";} else {cond2!=false;}
+   if (num1>num2 && num1>num3 && num>0) {return "Número 1 es mayor y positivo";} else {cond2==false;}
          
-   if (num1>num2 && num1>num3) {return ++num3;} else {cond3!=false;}
+   if (num1>num2 && num1>num3) {return ++num3;} else {cond3==false;}
 
-   if (cond1=== true && cond2===true && cond3===true) { return false;}
+   if (cond1!== true && cond2!==true && cond3!==true) { return false;}
         
   }
   else{
@@ -180,7 +179,7 @@ function tablaDelSeis(){
   //Escribe tu código aquí   
   var array=[];
   for(var i =0;i<=60;i++){
-    array[i]=i*6;
+    array[].push(i*6);
   }
   return array;
   
@@ -189,7 +188,7 @@ function tablaDelSeis(){
 function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
-  if(numero>=999 && numero>=100 ){return true;}else{return false;}
+  if(numero<=999 && numero>=100 ){return true;}else{return false;}
 }
 
 function doWhile(numero) {
