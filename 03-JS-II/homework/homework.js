@@ -25,12 +25,12 @@ function conection(status) {
   //Devolver el estado de conexión de usuario en cada uno de los casos.
  
  switch(status) {
-                 case 1: return"Online";
+                 case 1: return "Online";
                          
-                 case 2: return="Away";
+                 case 2: return "Away";
                          
                  default:
-                         return="offline";         
+                         return "offline";         
                 }               
 }
 
