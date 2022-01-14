@@ -282,12 +282,15 @@ function breakStatement(numero) {
    array.push(numero+2);
    
    }  else
-         {
-          return "Se interrumpió la ejecución";
+         {        
           break;
          }
    limite++; 
   }
+  if (limite<10) 
+  {
+  return "Se interrumpió la ejecución";
+  }else
   return array;
 }
 
@@ -303,10 +306,11 @@ function continueStatement(numero) {
   var limite=0;
   while(limite<10)
   {
-    if (limite<=5)
+    if (limite!==5)
     {
     array.push(numero+2);
-    }else{continue;}
+    }
+    else{continue;}
     limite++;
   }
   return array;
