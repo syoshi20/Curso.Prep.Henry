@@ -281,21 +281,20 @@ function breakStatement(numero) {
     numero=numero+2;
    if(numero=== limite)
    {
-    if (limite<10) 
-    {
-    return "Se interrumpió la ejecución";
-    }
+    
    break;
 
    }  else
          {                
-          array.push(numero);         
-          limite++;
+          array.push(numero);                 
          }
-   
+   limite++;
   }
-  
-  return array;
+  if (limite<10) 
+    {
+    return "Se interrumpió la ejecución";
+    }else
+  {return array;}
   
 }
 
@@ -320,9 +319,9 @@ function continueStatement(numero) {
     else{
          suma=suma+2;
          array.push(suma);
-        i++; 
+        
         }
-    
+   i++;  
   }
   return array;
 }
