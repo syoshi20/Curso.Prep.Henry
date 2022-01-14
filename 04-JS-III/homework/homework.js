@@ -229,15 +229,15 @@ function mesesDelAño(array) {
   }
   for(var j =0; j<nuevo.length;j++)
   {
-    if (nuevo[j]==="Enero" && mes1>==0 )
+    if (nuevo[j]==="Enero" && mes1>=0 )
     {
       mes1++;
     }
-    if (nuevo[j]==="Marzo" && mes1>==0 )
+    if (nuevo[j]==="Marzo" && mes1>=0 )
     {
       mes2++;
     }
-    if (nuevo[j]==="Noviembre" && mes1>==0 )
+    if (nuevo[j]==="Noviembre" && mes1>=0 )
     {
       mes3++;
     }
@@ -302,7 +302,7 @@ function continueStatement(numero) {
   var limite=0;
   while(limite<10)
   {
-    if (limite<==5)
+    if (limite<=5)
     {
     array.push(numero+2);
     }else{continue;}
