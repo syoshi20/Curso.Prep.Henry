@@ -278,6 +278,7 @@ function breakStatement(numero) {
   
   while(limite <10)
   {
+    limite++;
     numero=numero+2;
    if(numero=== limite)
    {
@@ -288,7 +289,7 @@ function breakStatement(numero) {
          {                
           array.push(numero);                 
          }
-   limite++;
+   
   }
   if (limite<10) 
     {
@@ -311,7 +312,7 @@ function continueStatement(numero) {
   var i=0;
   while(i<10)
   {
-    
+    i++; 
     if (i===5)
     {
     continue;
@@ -321,7 +322,7 @@ function continueStatement(numero) {
          array.push(suma);
         
         }
-   i++;  
+     
   }
   return array;
 }
