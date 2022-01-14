@@ -281,7 +281,12 @@ function breakStatement(numero) {
     numero=numero+2;
    if(numero=== limite)
    {
+    if (limite<10) 
+    {
+    return "Se interrumpió la ejecución";
+    }
    break;
+
    }  else
          {                
           array.push(numero);         
@@ -289,13 +294,9 @@ function breakStatement(numero) {
          }
    
   }
-  if (limite<10) 
-  {
-  return "Se interrumpió la ejecución";
-  }
-  else{
+  
   return array;
-  }
+  
 }
 
 
