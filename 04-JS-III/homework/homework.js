@@ -289,12 +289,13 @@ function breakStatement(numero) {
          }
    
   }
-  if (limite>10) 
+  if (limite<10) 
   {
   return "Se interrumpió la ejecución";
   }
+  else{
   return array;
-  
+  }
 }
 
 
