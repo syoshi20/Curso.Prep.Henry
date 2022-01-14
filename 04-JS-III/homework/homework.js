@@ -174,7 +174,7 @@ function empiezaConNueve(n) {
   //inicia con 9 y false en otro caso.
   //Escribe tu código aquí
   var d=10;
-while (d <== 10000000000 ) 
+while (d <= 10000000000 ) 
  {
    if (n%d===9 ) 
     {
