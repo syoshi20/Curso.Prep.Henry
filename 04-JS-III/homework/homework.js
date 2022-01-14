@@ -173,14 +173,13 @@ function empiezaConNueve(n) {
   //Desarrolle una función que recibe como parámetro un número entero n. Debe retornar true si el entero 
   //inicia con 9 y false en otro caso.
   //Escribe tu código aquí
-  var d=10;
-while (d <= 10000000000 ) 
+  
+
  {
-   if (n%d===9 ) 
+   if (n%10000000===9 || n%1000000===9|| n%100000===9|| n%10000===9|| n%1000===9|| n%100===9|| n%10===9) 
     {
       return true;
     }
-  d=d*10;
  }
  return false;
 }
