@@ -95,7 +95,7 @@ function verificarPassword(usuario, password) {
   // Devuelve "true" si coinciden
   // De lo contrario, devuelve "false"
   // // Tu código:
-  if (usuario['password']===password) 
+  if (usuario.password===password) 
   {
     return true;
   }else {return false;}
@@ -141,7 +141,7 @@ function sumarLikesDeUsuario(usuario) {
   var sum=0;
   for(var i = 0 ; i<usuario.posts.length; i++)
   {
-    sum=sum+posts[i].post.like;
+    sum=sum+usuario.posts[i].post.like;
   }
   return sum;
 }
@@ -156,14 +156,13 @@ function agregarMetodoCalculoDescuento(producto) {
   // producto.porcentajeDeDescuento -> 0.2 (o simplemente ".2")
   // producto.calcularPrecioDescuento() -> 20 - (20 * 0.2)
   // Tu código:
-      producto={
-        calcularPrecioDescuento: function()
+      
+      producto.calcularPrecioDescuento= function()
         {
           var precioF=0;
           precioF= producto.precio-(producto.precio*producto.porcentajeDeDescuento);
           return precioF;
-        }
-    };
+        };
     return producto;
 }
 
