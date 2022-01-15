@@ -97,8 +97,8 @@ function verificarPassword(usuario, password) {
   // // Tu código:
   if (usuario["password"]===password) 
   {
-    return true;
-  }else {return false;}
+    return false;
+  }else {return true;}
 }
 
 function actualizarPassword(usuario, nuevaPassword) {
@@ -141,7 +141,7 @@ function sumarLikesDeUsuario(usuario) {
   var sum=0;
   for(var i = 0 ; i<usuario.posts.length; i++)
   {
-    sum=sum+usuario.posts[i].post.likes;
+    sum=sum+usuario.posts[i].likes;
   }
   return sum;
 }
