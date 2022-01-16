@@ -1,0 +1,7 @@
+objetos es la representacion de algo abstracto que contiene una o mas propiedades
+Propiedades son los atributos de los objetos q puedens ser variable ,array ,funciones,etc
+Metodos son las funciones que podemos guardar en los objetos 
+bucle for in es una statement que me permite recorrer objetos
+Para llamar las propiedades de los objetos hay dos forma:
+la primera es como si fuera un array pero en el indice se pone el nombre de la propiedad del objeto
+la segunda es mas facil de escribir es poner el nombre del objeto seguido de un punto mas el nombre de la propiedad  
