@@ -5,7 +5,7 @@ function mayuscula(nombre) {
   //ej: Recibe "mario" ----> Devuelve "Mario"
   //Tu código:
 
-   nombre.charAt(0).prototype.toUpperCase();
+   nombre.charAt(0).toUpperCase();
    return nombre;
 }
 
@@ -66,16 +66,18 @@ function filter(array) {
   function comienzaA(array)
   {
     var lista=[];
-    array.forEach(elemento)
+    array.forEach(function(elemento)
     {
       if (elemento.charAt(0)==="a")
       {
         lista.push(elemento);
       }
-    }
+    
     return lista;
-  }
-  array.forEach(comienzaA);
+    }
+  );
+  
+  
 }
 
 // No modificar nada debajo de esta línea
