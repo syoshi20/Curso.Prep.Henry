@@ -27,9 +27,10 @@ function sumarArray(numeros, cb) {
   // Pasa el resultado a `cb`
   // No es necesario devolver nada
   //Tu código:
-    cb() = numeros.reduce(function(acc, elemento){
+    var suma = numeros.reduce(function(acc, elemento){
     return acc+elemento;
-  })
+  },0);
+    cb(suma);
 }
 
 function forEach(array, cb) {
