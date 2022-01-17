@@ -5,7 +5,7 @@ function mayuscula(nombre) {
   //ej: Recibe "mario" ----> Devuelve "Mario"
   //Tu código:
 
-   nombre.charAt(0).toUpperCase();
+   nombre.charAt(0)= nombre.charAt(0).toUpperCase();
    return nombre;
 }
 
@@ -63,9 +63,10 @@ function filter(array) {
   //Filtrar todos los elementos del array que comiencen con la letra "a".
   //Devolver un nuevo array con los elementos que cumplen la condición
   //Tu código:
-  function comienzaA(array)
+  var lista=[];
+  lista=function comienzaA(array)
   {
-      var lista=[];
+      
       array.forEach(function(elemento)
       {
        if (elemento.charAt(0)==="a")
@@ -75,7 +76,7 @@ function filter(array) {
       } ) ;
     return lista;  
   }
-  array.forEach(comienzaA);
+ 
 }
 
 // No modificar nada debajo de esta línea
