@@ -64,18 +64,16 @@ function filter(array) {
   //Devolver un nuevo array con los elementos que cumplen la condición
   //Tu código:
   var lista=[];
-  lista=function comienzaA(array)
-  {
       
       array.forEach(function(elemento)
       {
        if (elemento.charAt(0)==="a")
-      {
-        lista.push(elemento);
-      }
+         {
+           lista.push(elemento);
+         }
       } ) ;
     return lista;  
-  }
+  
  
 }
 
