@@ -65,19 +65,17 @@ function filter(array) {
   //Tu código:
   function comienzaA(array)
   {
-    var lista=[];
-    array.forEach(function(elemento)
-    {
-      if (elemento.charAt(0)==="a")
+      var lista=[];
+      array.forEach(function(elemento)
+      {
+       if (elemento.charAt(0)==="a")
       {
         lista.push(elemento);
       }
-    
-    return lista;
-    }
-  );
-  
-  
+      } ) ;
+    return lista;  
+  }
+  array.forEach(comienzaA);
 }
 
 // No modificar nada debajo de esta línea
