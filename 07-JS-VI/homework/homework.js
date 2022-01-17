@@ -5,7 +5,7 @@ function mayuscula(nombre) {
   //ej: Recibe "mario" ----> Devuelve "Mario"
   //Tu código:
 
-   nombre.charAt(0)= nombre.charAt(0).toUpperCase();
+   nombre = nombre.charAt(0).toUpperCase()+nombre.slice(1);
    return nombre;
 }
 
